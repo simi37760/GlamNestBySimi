@@ -1,0 +1,178 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff; /* Light blue background */
+  color: #2c3e50; /* Soft text */
+}
+
+/* Header */
+header {
+  background-color: #d1e9ff; /* Very soft blue */
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  color: #003366; /* Deep navy blue */
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #5fa8d3; /* Accent blue */
+}
+
+/* Banner */
+.banner {
+  background-image: url('images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  background-color: #5fa8d3; /* Fallback */
+  backdrop-filter: blur(4px);
+}
+
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner p {
+  font-size: 1.1rem;
+}
+
+/* Sections */
+.products, .about, .contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products h2, .about h2, .contact h2 {
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #cce4f6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Forms */
+form input, form textarea {
+  width: 85%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #b3d9f5;
+  border-radius: 8px;
+  background-color: #f7fbff;
+  color: #333;
+}
+
+form button {
+  background-color: #5fa8d3;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #3d94c2;
+}
+
+/* Footer */
+footer {
+  background-color: #d1e9ff;
+  color: #003366;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* WhatsApp Chat Button */
+.whatsapp-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-chat:hover {
+  background-color: #128C7E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .banner {
+    padding: 60px 20px;
+  }
+}
